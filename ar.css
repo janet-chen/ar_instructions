@@ -8,6 +8,7 @@ body {
 
 body {
     font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color:#515753;
 }
 
 .text-vertical-center {
@@ -29,4 +30,22 @@ body {
     position: relative;
     display: table;
     width: 100%;
+    color:black;
+    margin-bottom: 20px;
 }
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+  }
+
+  .boxed {
+    height: 315px;
+    width: 560px;
+    border: 1px solid black;
+  }
