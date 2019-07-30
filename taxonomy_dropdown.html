@@ -65,18 +65,15 @@
     <div class="row">
         <div class="col-2">
             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home"
-                    aria-selected="true" >Representation</a>
-                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
-                    aria-selected="false">Purpose</a>
-                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
-                    aria-selected="false">Instruction Placement</a>
-                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
-                    aria-selected="false">Instructor entity
-                </a>
+                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#instructions" role="tab" aria-controls="v-pills-home"
+                    aria-selected="true">Instructions</a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#interactions" role="tab" aria-controls="v-pills-profile"
+                    aria-selected="false">Interactions</a>
             </div>
         </div>
         <div class="col-8">
+            <h2 id="instructions">Instructions</h2>
+            <hr>
             <div id="accordion">
                 <div class="card">
                     <div class="card-header" id="headingOne">
@@ -90,17 +87,135 @@
                         <div class="card-body">
                             <h4>Virtual Object Part(s)</h4>
                             <p>Virtual model of the object or a part of the object of assembly represented in any degree of
-                                realism, transparency, and size</p><hr>
+                                realism, transparency, and size</p>
+                            <hr>
                             <h4>Virtual Indicator</h4>
-                            <p>Virtual assets that are external to object parts and tools</p><hr>
+                            <p>Virtual assets that are external to object parts and tools</p>
+                            <hr>
                             <h4>Text</h4>
-                            <p>Information communicated as words</p><hr>
+                            <p>Information communicated as words</p>
+                            <hr>
                             <h4>Audio</h4>
-                            <p>Information directed towards the senses of hearing of the user</p><hr>
+                            <p>Information directed towards the senses of hearing of the user</p>
+                            <hr>
                             <h4>Embodied gesture</h4>
-                            <p>Representation of human or part of a human with a virtual model</p><hr>
+                            <p>Representation of human or part of a human with a virtual model</p>
+                            <hr>
                             <h4>Embedded multimedia content</h4>
                             <p>External (non-AR) multimedia content that is embedded into the manual</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                                Purpose
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <h4>Prescriptive</h4>
+                            <p>Primitives that recommend specific actions and/or explicit instructions to be followed.
+                            </p>
+                            <hr>
+                            <h4>Descriptive</h4>
+                            <p>Non-prescriptive primitives that provide information, clarifications, and explanations.
+                            </p>
+                            <hr>
+                            <h4>Attentional</h4>
+                            <p>Primitives that draw attention to specific points of interest.
+                            </p>
+                            <hr>
+                            <h4>Feedback</h4>
+                            <p>Responses from the system (or from a virtual or remote assistant)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                                Instruction Placement
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <h4>World-stabilized</h4>
+                            <p>Virtual assets anchored to part of user's environment</p>
+                            <hr>
+                            <h4>View-stabilized</h4>
+                            <p>Virtual assets secured to screen and placement does not change with gaze</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                                Instructor Entity
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <h4>Real-time virtual assistance</h4>
+                            <p>A software agent assisting the user</p>
+                            <hr>
+                            <h4>Real-time remote assistance</h4>
+                            <p>A specialized worker in a separate location assisting the user</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            &nbsp;
+            <div id="accordion">
+                <h2 id="interactions">Interactions</h2>
+                <hr>
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
+                                User Input and Control
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <h4>Tangible User Interface</h4>
+                            <p>Tangible devices that communicate from the user to the system</p>
+                            <hr>
+                            <h4>Voice Command</h4>
+                            <p>User's direction of sight gives input to the system</p>
+                            <hr>
+                            <h4>Gaze</h4>
+                            <p>Information communicated as words</p>
+                            <hr>
+                            <h4>Spatial Gesture</h4>
+                            <p>User makes a spatial movement to give input to the system</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseOne">
+                                Display Hardware
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <h4>Head-worn display</h4>
+                            <p>Hardware worn on the head of the user</p>
+                            <hr>
+                            <h4>Handheld display</h4>
+                            <p>User's direction of sight gives input to the system</p>
+                            <hr>
+                            <h4>Spatial Display</h4>
+                            <p>Hardware fixed statically within the environment </p>
                         </div>
                     </div>
                 </div>
