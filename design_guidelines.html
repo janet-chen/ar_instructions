@@ -122,16 +122,20 @@
               </button>
             </h5>
           </div>
-          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
             <div class="card-body">
-              <h4>Implement the AR manual for display hardware that can fit the assembly workspace within it’s FoV.</h4>
+              <h4>Implement the AR manual for display hardware that can fit the assembly workspace within its FoV to reduce excessive
+                head movements (for
+                <a href="taxonomy_dropdown.html" data-container="body" data-toggle="popover"  data-trigger="hover" data-placement="top" title="Head-mounted Display" data-content="Hardware worn on the head of the user">
+                    HMD
+                </a>) and panning operations (for HHD)</h4>
               &nbsp;
               <p>
                 <a class="btn btn-info" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample">
                   Example with objects within FOV
                 </a>
               </p>
-              <div class="collapse" id="collapse1">
+              <div class="collapse" id="collapse1"> 
                 <a href="https://www.youtube.com/watch?v=-Fd-FHqPXk8&list=PLBlQST3LPyKJIQaKjBXu_YG00tVFiN8gK" target="_blank">
                   <img src="gifs/1.gif" alt="virtual tool" width="540" height="360">
                 </a>
@@ -249,7 +253,7 @@
                         Example of virtual object parts
                       </a>
                     </p>
-                    <div class="collapse" id="collapse1">
+                    <div class="collapse" id="collapse2">
                       <a href="https://www.youtube.com/watch?v=VApDEJMMc0M&list=PLBlQST3LPyKJIQaKjBXu_YG00tVFiN8gK" target="_blank">
                         <img src="gifs/6.gif" alt="virtual tool" width="540" height="360">
                       </a>
@@ -259,23 +263,24 @@
               </div>
               <hr>
               <div class="card-body">
-                  <h4>Directly superimpose virtual information on the real world for convenient, hands-free instructions, but be wary of occlusion.</h4>
-                  &nbsp;
-                  <div class="row">
-                    <div class="col">
-                      <p>
-                        <a class="btn btn-info" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample">
-                          Example of virtual object parts
-                        </a>
-                      </p>
-                      <div class="collapse" id="collapse1">
-                        <a href="https://www.youtube.com/watch?v=UGmywcSbXMI" target="_blank">
-                          <img src="gifs/7.gif" alt="virtual tool" width="540" height="360">
-                        </a>
-                      </div>
+                <h4>Directly superimpose virtual information on the real world for convenient, hands-free instructions, but be
+                  wary of occlusion.</h4>
+                &nbsp;
+                <div class="row">
+                  <div class="col">
+                    <p>
+                      <a class="btn btn-info" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Example of virtual object parts
+                      </a>
+                    </p>
+                    <div class="collapse" id="collapse2">
+                      <a href="https://www.youtube.com/watch?v=UGmywcSbXMI" target="_blank">
+                        <img src="gifs/7.gif" alt="virtual tool" width="540" height="360">
+                      </a>
                     </div>
                   </div>
                 </div>
+              </div>
             </div>
           </div>
           <div class="card">
@@ -459,6 +464,7 @@
         crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+        <script src="ar.js"></script>
 </body>
 
 </html>
