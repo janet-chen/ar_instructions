@@ -4,7 +4,7 @@ $(document).ready(function () {
         trigger: 'hover',
         html: true,
         content: function () {
-            return '<p> ' + $(this).data('text') + ' </p>' + '<img class="img-fluid" src="' + $(this).data('img') + '" />';
+            return '<p> ' + $(this).data('text') + ' </p>' + '<img width="240" src="' + $(this).data('img') + '" />';
         },
         title: 'Toolbox'
     })
