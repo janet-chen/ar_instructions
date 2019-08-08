@@ -49,7 +49,7 @@ var FOV = '<div class="card">'+
 '                <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" title="Handheld Display"'+
 '                  data-img="images/HHD.jpg" data-text="Display hardware that is held in the user\'s hands (e.g. tablet, smartphone).">'+
 '                  HHD'+
-'                </a>. If assembly workspace is larger than FoV, add visual signifiers of “offscreen” virtual assets.</h4>'+
+'                </a>. If the type of hardware is restricted or the workspace is extremely large, include visual signifiers of "offscreen" virtual assets.  </h4>'+
 '               '+
 '              <p>'+
 '                <a class="btn btn-secondary" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample">'+

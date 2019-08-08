@@ -60,7 +60,6 @@
       <a href="guidelines/DG_9.html">9</a>
       <a href="guidelines/DG_10.html">10</a>
       <a href="guidelines/DG_11.html">11</a>
-      <a href="guidelines/DG_12.html">12</a>
       <hr>
       <br>
     </div>
@@ -174,7 +173,41 @@
     </div>
     <div class="col-8">
       <div id="accordion">
-          <div id="FOV"></div>
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Choose FOV based on workspace layout
+              </button>
+            </h5>
+          </div>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              <h4>Implement the AR manual for display hardware that can fit the assembly workspace within its FoV to reduce excessive
+                head movements for
+                <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" title="Head-mounted Display"
+                  data-img="images/HMD.jpg" data-text="Hardware worn on the head of the user">
+                  HMD
+                </a>and panning operations for
+                <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" title="Handheld Display"
+                  data-img="images/HHD.jpg" data-text="Portable hardware held by the user ">
+                  HHD
+                </a>. If the type of hardware is restricted or the workspace is extremely large, include visual signifiers
+                of "offscreen" virtual assets.</h4>
+              &nbsp;
+              <p>
+                <a class="btn btn-secondary" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  Example
+                </a>
+              </p>
+              <div class="collapse" id="collapse1">
+                <a href="https://www.youtube.com/watch?v=-Fd-FHqPXk8" target="_blank">
+                  <img src="../gifs/1.gif" alt="virtual tool" width="540" height="360">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="card">
           <div class="card-header" id="headingTwo">
             <h5 class="mb-0">
@@ -185,7 +218,8 @@
           </div>
           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
             <div class="card-body">
-              <h4>Support hands-free interaction techniques (e.g. voice commands) to free up the users hands.</h4>
+              <h4>Support hands-free interaction techniques (e.g. voice commands) to free up the users hands and to reduce context
+                switching between the manual and the task.</h4>
               &nbsp;
               <div class="row">
                 <div class="col">
@@ -226,364 +260,365 @@
                       </div>
                     </div>
                   </div>
-                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
-              Audio instructions
-            </button>
-          </h5>
-        </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-          <div class="card-body">
-            <h4>Shorten or replace verbose audio instructions with visual references when explaining specific object configurations.</h4>
-            &nbsp;
-            <div class="row">
-              <div class="col">
-                <p>
-                  <a class="btn btn-secondary" data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    Example
-                  </a>
-                </p>
-                <div class="collapse" id="collapse3">
-                  <a href="https://www.youtube.com/watch?v=d3fK7WayWX4" target="_blank">
-                    <img src="gifs/4.gif" alt="virtual tool" width="540" height="360">
-                  </a>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseTwo">
+                Audio instructions
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              <h4>Shorten or replace verbose audio instructions with visual references when explaining specific object configurations.</h4>
+              &nbsp;
+              <div class="row">
+                <div class="col">
+                  <p>
+                    <a class="btn btn-secondary" data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Example
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapse3">
+                    <a href="https://www.youtube.com/watch?v=d3fK7WayWX4" target="_blank">
+                      <img src="gifs/4.gif" alt="virtual tool" width="540" height="360">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <hr> &nbsp;
+              <h4>Supplement audio instruction with visual aids (e.g. text subtitles) when audio-only communication is not effective
+                (e.g. for tasks that take place in a noisy environment)</h4>
+              &nbsp;
+              <div class="row">
+                <div class="col">
+                  <p>
+                    <a class="btn btn-secondary" onclick="playPause(3)" data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false"
+                      aria-controls="collapseExample">
+                      Example
+                      <img src="images/speaker-32.png" width="16" alt="speaker-icon"/>
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapse4">
+                    <div class="card card-body">
+                      <a href="https://www.youtube.com/watch?v=XzlZcdYmdvk" target="_blank">
+                        <video id="video3" width="540" height="360" controls loop>
+                          <source src="videos/supplementing_audio.mp4" type="video/mp4"> Your browser does not support the video tag.
+                        </video>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <hr> &nbsp;
-            <h4>Supplement audio instruction with visual aids (e.g. text subtitles) when audio-only communication is not effective
-              (e.g. for tasks that take place in a noisy environment)</h4>
-            &nbsp;
-            <div class="row">
-              <div class="col">
-                <p>
-                  <a class="btn btn-secondary" onclick="playPause(3)" data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false"
-                    aria-controls="collapseExample">
-                    Example
-                    <img src="images/speaker-32.png" width="16" />
-                  </a>
-                </p>
-                <div class="collapse" id="collapse4">
-                  <div class="card card-body">
-                    <a href="https://www.youtube.com/watch?v=XzlZcdYmdvk" target="_blank">
-                      <video id="video3" width="540" height="360" controls loop>
-                        <source src="videos/supplementing_audio.mp4" type="video/mp4"> Your browser does not support the video tag.
-                      </video>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                Displaying virtual assembly objects
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              <h4>Only present
+                <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" title="Virtual Object Part(s)"
+                  data-img="gifs/virtual_obj_optimized.gif" data-text="Virtual model of the object or a part of the object of assembly represented in any degree of realism, transparency, and size">virtual counterparts</a> of the assembly object (rather than a complete virtual replica) that are relevant
+                for the current step so that relevant information is immediately apparent. </h4>
+              &nbsp;
+              <div class="row">
+                <div class="col">
+                  <p>
+                    <a class="btn btn-secondary" data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Example
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapse5">
+                    <a href="https://www.youtube.com/watch?v=VApDEJMMc0M" target="_blank">
+                      <img src="gifs/6.gif" alt="virtual tool" width="540" height="360">
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
-              Displaying virtual assembly objects
-            </button>
-          </h5>
-        </div>
-        <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-          <div class="card-body">
-            <h4>Only present
-              <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" title="Virtual Object Part(s)"
-                data-img="gifs/virtual_obj_optimized.gif" data-text="Virtual model of the object or a part of the object of assembly represented in any degree of realism, transparency, and size">virtual object parts</a> of the assembly object that are relevant for the current step.</h4>
-            &nbsp;
-            <div class="row">
-              <div class="col">
-                <p>
-                  <a class="btn btn-secondary" data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    Example
-                  </a>
-                </p>
-                <div class="collapse" id="collapse5">
-                  <a href="https://www.youtube.com/watch?v=VApDEJMMc0M" target="_blank">
-                    <img src="gifs/6.gif" alt="virtual tool" width="540" height="360">
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <div class="card-body">
-            <h4>Directly
-              <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" title="Superimposition"
-                data-content="Virtual assets displayed directly over real objects">superimpose</a> virtual information on the real world for convenient, hands-free instructions, but be wary
-              of
-              <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" title="Occlusion" data-content="The real object is hidden behind the virtual object">occlusion.</a>
-            </h4>
-            &nbsp;
-            <div class="row">
-              <div class="col">
-                <p>
-                  <a class="btn btn-secondary" data-toggle="collapse" href="#collapse6" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    Example
-                  </a>
-                </p>
-                <div class="collapse" id="collapse6">
-                  <div id="carousel7" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carousel7" data-slide-to="0" class="active"></li>
-                      <li data-target="#carousel7" data-slide-to="1"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img class="d-block w-100" src="gifs/7.gif" alt="First slide">
-                        <div class="carousel-caption d-none d-md-block">
-                          <a href="https://www.youtube.com/watch?v=UGmywcSbXMI" target="_blank">
-                            <p>Source</p>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="gifs/7_b.gif" alt="Second slide">
-                        <div class="carousel-caption d-none d-md-block">
-                          <a href="">
-                            <p>Source</p>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
-              Prescribing action
-            </button>
-          </h5>
-        </div>
-        <div id="collapseFive" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-          <div class="card-body">
-            <h4>Rather than using static 2D diagrams, use 3D elements positioned in the user’s environment (e.g. superimposed
-              virtual tools) to depict assembly actions.</h4>
-            &nbsp;
-            <div class="row">
-              <div class="col">
-                <p>
-                  <a class="btn btn-secondary" data-toggle="collapse" href="#collapse7" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    Example
-                  </a>
-                </p>
-                <div class="collapse" id="collapse7">
-                  <div id="carousel8" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carousel8" data-slide-to="0" class="active"></li>
-                      <li data-target="#carousel8" data-slide-to="1"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img class="d-block w-100" src="gifs/8.gif" alt="First slide">
-                        <div class="carousel-caption d-none d-md-block">
-                          <a href="https://www.youtube.com/watch?v=8HvMk3C8pM0" target="_blank">
-                            <p>Source</p>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="gifs/8_b.gif" alt="Second slide">
-                        <div class="carousel-caption d-none d-md-block">
-                          <a href="https://www.youtube.com/watch?v=609RIVGcXyw" target="_blank">
-                            <p>Source</p>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card-body">
-            <hr> &nbsp;
-            <h4>Rather than using abstract entities (e.g. arrows) to depict specific hand maneuvers, show a virtual hand or
-              <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" title="Embedded Multimedia Content"
-                data-img="gifs/embedded_content_cropped.gif" data-text="External (non-AR) multimedia content that is embedded into the manual">embed a demo</a> video demonstrating the procedure so that users can easily copy the gestures.</h4>
-            &nbsp;
-            <div class="row">
-              <div class="col">
-                <p>
-                  <a class="btn btn-secondary" data-toggle="collapse" href="#collapse8" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    Example
-                  </a>
-                </p>
-                <div class="collapse" id="collapse8">
-                  <div id="carousel9" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carousel9" data-slide-to="0" class="active"></li>
-                      <li data-target="#carousel9" data-slide-to="1"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img class="d-block w-100" src="gifs/9.gif" alt="First slide">
-                        <div class="carousel-caption d-none d-md-block">
-                          <a href="https://www.youtube.com/watch?v=QZ5GdhSnMzQ" target="_blank">
-                            <p>Source</p>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="gifs/9_b.gif" alt="Second slide">
-                        <div class="carousel-caption d-none d-md-block">
-                          <a href="https://www.youtube.com/watch?v=tEW2khqu4bM" target="_blank">
-                            <p>Source</p>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseTwo">
-              Attention-directing cues
-            </button>
-          </h5>
-        </div>
-        <div id="collapseSix" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-          <div class="card-body">
-            <h4>Use salient
-              <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" title="Attentional" data-img="gifs/attentional_optimized.gif"
-                data-text="Primitives that draw the user's attention to specific points of interest.">attentional</a> visual indicators (e.g. high contrast color highlights) to help users quickly detect and identify
-              targets in the real environment.</h4>
-            &nbsp;
-            <div class="row">
-              <div class="col">
-                <p>
-                  <a class="btn btn-secondary" data-toggle="collapse" href="#collapse9" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    Example
-                  </a>
-                </p>
-                <div class="collapse" id="collapse9">
-                  <div id="carousel10" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carousel10" data-slide-to="0" class="active"></li>
-                      <li data-target="#carousel10" data-slide-to="1"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img class="d-block w-100" src="gifs/10.gif" alt="First slide">
-                        <div class="carousel-caption d-none d-md-block">
-                          <a href="https://www.youtube.com/watch?v=6oa6LDSgUKc" target="_blank">
-                            <p>Source</p>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="gifs/10_b.gif" alt="Second slide">
-                        <div class="carousel-caption d-none d-md-block">
-                          <a href="">
-                            <p>Source</p>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseTwo">
-              Text
-            </button>
-          </h5>
-        </div>
-        <div id="collapseSeven" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-          <div class="card-body">
-            <h4>
-              <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" title="View-stabilized"
-                data-img="gifs/view_stabilized_optimized.gif" data-text="Virtual assets are secured to the screen. Placement remains fixed even when the device moves.">View-stabilize</a> critical information so that it is visible to the user regardless of where the device is
-              pointed.
-            </h4>
-            &nbsp;
-            <div class="row">
-              <div class="col">
-                <p>
-                  <a class="btn btn-secondary" data-toggle="collapse" href="#collapse10" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    Example
-                  </a>
-                </p>
-                <div class="collapse" id="collapse10">
-                  <div id="carousel11" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carousel11" data-slide-to="0" class="active"></li>
-                      <li data-target="#carousel11" data-slide-to="1"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img class="d-block w-100" src="gifs/11.gif" alt="First slide">
-                        <div class="carousel-caption d-none d-md-block">
-                          <a href="https://www.youtube.com/watch?v=eVV5tUmky6c" target="_blank">
-                            <p>Source</p>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="gifs/11_b.gif" alt="Second slide">
-                        <div class="carousel-caption d-none d-md-block">
-                          <a href="https://www.youtube.com/watch?v=5E6qambiCo0" target="_blank">
-                            <p>Source</p>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card-body">
-            <hr> &nbsp;
-            <h4> Only use text when strictly required (e.g. labelling objects for training). Keep instructions short and simple.</h4>
-            &nbsp;
-            <div class="row">
-              <div class="col">
-                <p>
-                  <a class="btn btn-secondary" data-toggle="collapse" href="#collapse11" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    Example
-                  </a>
-                </p>
-                <div class="collapse" id="collapse11">
-                  <div class="card card-body">
-                    <a href="https://www.youtube.com/watch?v=eVV5tUmky6c" target="_blank">
-                      <img src="gifs/12.gif" alt="virtual tool" width="540" height="360">
+            <hr>
+            <div class="card-body">
+              <h4>Directly
+                <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" title="Superimposition"
+                  data-content="Virtual assets displayed directly over real objects">superimpose</a> virtual information on the real world for convenient, hands-free instructions, but be wary
+                of
+                <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" title="Occlusion" data-content="The real object is hidden behind the virtual object">occlusion.</a>
+              </h4>
+              &nbsp;
+              <div class="row">
+                <div class="col">
+                  <p>
+                    <a class="btn btn-secondary" data-toggle="collapse" href="#collapse6" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Example
                     </a>
+                  </p>
+                  <div class="collapse" id="collapse6">
+                    <div id="carousel7" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel7" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel7" data-slide-to="1"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="gifs/7.gif" alt="First slide">
+                          <div class="carousel-caption d-none d-md-block">
+                            <a href="https://www.youtube.com/watch?v=UGmywcSbXMI" target="_blank">
+                              <p>Source</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="gifs/7_b.gif" alt="Second slide">
+                          <div class="carousel-caption d-none d-md-block">
+                            <a href="">
+                              <p>Source</p>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!--div class="card">
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                Prescribing action
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFive" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              <h4>Rather than embedding static 2D diagrams, use 3D elements positioned in the user’s environment (e.g. virtual
+                tools superimposed on the real object of assembly) to depict assembly actions.</h4>
+              &nbsp;
+              <div class="row">
+                <div class="col">
+                  <p>
+                    <a class="btn btn-secondary" data-toggle="collapse" href="#collapse7" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Example
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapse7">
+                    <div id="carousel8" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel8" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel8" data-slide-to="1"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="gifs/8.gif" alt="First slide">
+                          <div class="carousel-caption d-none d-md-block">
+                            <a href="https://www.youtube.com/watch?v=8HvMk3C8pM0" target="_blank">
+                              <p>Source</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="gifs/8_b.gif" alt="Second slide">
+                          <div class="carousel-caption d-none d-md-block">
+                            <a href="https://www.youtube.com/watch?v=609RIVGcXyw" target="_blank">
+                              <p>Source</p>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <hr> &nbsp;
+              <h4>Rather than using abstract entities (e.g. arrows) to depict specific hand maneuvers (e.g. safely lifting heavy
+                machinery), use a virtual hand or
+                <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" title="Embedded Multimedia Content"
+                  data-img="gifs/embedded_content_cropped.gif" data-text="External (non-AR) multimedia content that is embedded into the manual">embed a demo</a> video to clearly demonstrate the procedure.</h4>
+              &nbsp;
+              <div class="row">
+                <div class="col">
+                  <p>
+                    <a class="btn btn-secondary" data-toggle="collapse" href="#collapse8" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Example
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapse8">
+                    <div id="carousel9" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel9" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel9" data-slide-to="1"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="gifs/9.gif" alt="First slide">
+                          <div class="carousel-caption d-none d-md-block">
+                            <a href="https://www.youtube.com/watch?v=QZ5GdhSnMzQ" target="_blank">
+                              <p>Source</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="gifs/9_b.gif" alt="Second slide">
+                          <div class="carousel-caption d-none d-md-block">
+                            <a href="https://www.youtube.com/watch?v=tEW2khqu4bM" target="_blank">
+                              <p>Source</p>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseTwo">
+                Attention-directing cues
+              </button>
+            </h5>
+          </div>
+          <div id="collapseSix" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              <h4>Use salient
+                <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" title="Attentional" data-img="gifs/attentional_optimized.gif"
+                  data-text="Primitives that draw the user's attention to specific points of interest.">attentional</a> visual indicators (e.g. high contrast color highlights) to help users quickly detect and
+                identify targets in the real environment.</h4>
+              &nbsp;
+              <div class="row">
+                <div class="col">
+                  <p>
+                    <a class="btn btn-secondary" data-toggle="collapse" href="#collapse9" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Example
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapse9">
+                    <div id="carousel10" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel10" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel10" data-slide-to="1"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="gifs/10.gif" alt="First slide">
+                          <div class="carousel-caption d-none d-md-block">
+                            <a href="https://www.youtube.com/watch?v=6oa6LDSgUKc" target="_blank">
+                              <p>Source</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="gifs/10_b.gif" alt="Second slide">
+                          <div class="carousel-caption d-none d-md-block">
+                            <a href="">
+                              <p>Source</p>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseTwo">
+                Text
+              </button>
+            </h5>
+          </div>
+          <div id="collapseSeven" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              <h4>
+                <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" title="View-stabilized"
+                  data-img="gifs/view_stabilized_optimized.gif" data-text="Virtual assets are secured to the screen. Placement remains fixed even when the device moves.">View-stabilize</a> critical information (e.g. a safety warning) so that it is visible to the user regardless
+                of where the device is pointed.
+              </h4>
+              &nbsp;
+              <div class="row">
+                <div class="col">
+                  <p>
+                    <a class="btn btn-secondary" data-toggle="collapse" href="#collapse10" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Example
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapse10">
+                    <div id="carousel11" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel11" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel11" data-slide-to="1"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="gifs/11.gif" alt="First slide">
+                          <div class="carousel-caption d-none d-md-block">
+                            <a href="https://www.youtube.com/watch?v=eVV5tUmky6c" target="_blank">
+                              <p>Source</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="gifs/11_b.gif" alt="Second slide">
+                          <div class="carousel-caption d-none d-md-block">
+                            <a href="https://www.youtube.com/watch?v=5E6qambiCo0" target="_blank">
+                              <p>Source</p>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <hr> &nbsp;
+              <h4>Only use text when it is strictly required (e.g. when the user must learn the names of specific assembly components).
+                Keep the text short and simple so that it does not clutter the screen or overwhelm the user.</h4>
+              &nbsp;
+              <div class="row">
+                <div class="col">
+                  <p>
+                    <a class="btn btn-secondary" data-toggle="collapse" href="#collapse11" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Example
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapse11">
+                    <div class="card card-body">
+                      <a href="https://www.youtube.com/watch?v=eVV5tUmky6c" target="_blank">
+                        <img src="gifs/12.gif" alt="virtual tool" width="540" height="360">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--div class="card">
             <div class="card-header" id="headingTwo">
               <h5 class="mb-0">
                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseTwo">
@@ -620,15 +655,15 @@
               </div>
             </div>
           </div-->
+      </div>
     </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="ar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+    <script src="ar.js"></script>
 </body>
 
 </html>
