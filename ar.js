@@ -35,17 +35,6 @@ function pauseFirstVideoPlaySecondVideo(videoNumber1, videoNumber2) {
 var loudVideo = document.getElementById("video1");
 loudVideo.volume = 0.1;
 
-// Carousel functions
-/*
-jQuery(window).load(function() {
-    /*
-        Stop carousel
-    */
-    //$('.carousel').carousel('pause');
- 
-// })
-
-
 // HTML blocks for moving around
 var header = '<h1>AR Design Guidelines</h1>';
 
