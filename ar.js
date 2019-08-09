@@ -36,15 +36,14 @@ var loudVideo = document.getElementById("video1");
 loudVideo.volume = 0.1;
 
 // Carousel functions
-
+/*
 jQuery(window).load(function() {
     /*
         Stop carousel
     */
-    $('.carousel').carousel('pause');
+    //$('.carousel').carousel('pause');
  
-});
-
+// })
 
 
 // HTML blocks for moving around
