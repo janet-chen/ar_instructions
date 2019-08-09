@@ -1,3 +1,4 @@
+// Enable popovers
 $(document).ready(function () {
     $('[data-toggle="popover"]').popover({
         //trigger: 'focus',
@@ -10,6 +11,8 @@ $(document).ready(function () {
     })
 });
 
+// Video functions
+
 function playPause(videoNumber) {
     var video = document.getElementById("video" + videoNumber.toString());
     if (video.paused)
@@ -18,17 +21,37 @@ function playPause(videoNumber) {
         video.pause();
 }
 
-var codeBlock = '<div class="content">' +
-    '<h1>This is a heading</h1>' +
-    '<p>This is a paragraph of text.</p>' +
-    '<p><strong>Note:</strong> If you don\'t escape "quotes" properly, it will not work.</p>' +
-    '</div>';
+function pauseFirstVideoPlaySecondVideo(videoNumber1, videoNumber2) {
+    var video1 = document.getElementById("video" + videoNumber1.toString());
+    var video2 = document.getElementById("video" + videoNumber2.toString());
+    if (!video1.paused) {
+        video1.pause();
+    }
+    if (video2.paused) {
+        video2.play()
+    }
+}
 
+var loudVideo = document.getElementById("video1");
+loudVideo.volume = 0.1;
+
+// Carousel functions
+
+jQuery(window).load(function() {
+    /*
+        Stop carousel
+    */
+    $('.carousel').carousel('pause');
+ 
+});
+
+
+
+// HTML blocks for moving around
 var header = '<h1>AR Design Guidelines</h1>';
 
 // Inserting the code block to wrapper element
 document.getElementById("Header").innerHTML = header;
-
 
 var FOV = '<div class="card">'+
 '          <div class="card-header" id="headingOne">'+
@@ -85,5 +108,5 @@ var FOV = '<div class="card">'+
 '            </div>'+
 '          </div>'+
 '        </div>';
-	
+
 document.getElementById("FOV").innerHTML = FOV;
