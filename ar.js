@@ -33,8 +33,8 @@ document.getElementById("Header").innerHTML = header;
 var FOV = '<div class="card">'+
 '          <div class="card-header" id="headingOne">'+
 '            <h5 class="mb-0">'+
-'              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">'+ '<i class="fa fa-circle" style="color:#06D6A0;"></i>' +
-'                 Choose FOV based on workspace layout'+
+'              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">'+ '<i class="fa fa-circle" style="color:#06d6a0;"></i>' +
+'                 &nbsp;&nbsp;Choose FOV based on workspace'+
 '              </button>'+
 '            </h5>'+
 '          </div>'+
