@@ -52,10 +52,10 @@ var FOV = '<div class="card">' +
     '          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">' +
     '            <div class="card-body">' +
     '              <h4>Choose display hardware that can fit the assembly workspace and virtual content within its FOV. This will reduce excessive head movements for' +
-    '                  data-img="images/HMD.jpg" data-text="Display hardware that is worn on the user\'s head (e.g. HoloLens, Google Glass).">' +
+    '                  <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-img="images/HMD.jpg" title="Head-mounted Display" data-text="Display hardware that is worn on the user\'s head (e.g. HoloLens, Google Glass).">' +
     '                  HMD' +
     '                </a>and panning operations for' +
-    '                <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" title="Handheld Display"' +
+    '                <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" title="Hand-held Display"' +
     '                  data-img="images/HHD.jpg" data-text="Display hardware that is held in the user\'s hands (e.g. tablet, smartphone).">' +
     '                  HHD' +
     '                </a>.</h4>' +
@@ -66,12 +66,25 @@ var FOV = '<div class="card">' +
     '                </a>' +
     '              </p>' +
     '              <div class="collapse" id="collapse1">' +
-    '                      <img src="gifs/1.gif" alt="First slide" width="540" height="360">' +
+    '               <div id="carousel10" class="carousel slide" data-ride="carousel" data-interval="false">' +
+    '                   <ol class="carousel-indicators">' +
+    '                       <li data-target="#carousel10" data-slide-to="0" class="active"></li>' +
+    '                       <li data-target="#carousel10" data-slide-to="1"></li>' +
+    '                   </ol>' +
+    '                       <div class="carousel-inner">' +
+    '                           <div class="carousel-item active">' +
+    '                           <img class="d-block w-100" src="gifs/fov1.gif" alt="First slide">' +
+    '                        </div>' +
+    '                       <div class="carousel-item">' +
+    '                           <img class="d-block w-100" src="gifs/fov2.gif" alt="Second slide">' +
     '                      </div>' +
     '                </div>' +
     '              </div>' +
     '            </div>' +
     '          </div>' +
     '        </div>';
+
+  
+ 
 
 document.getElementById("FOV").innerHTML = FOV;
