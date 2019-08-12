@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>AR Gallery v2</title>
+  <title>AR Gallery</title>
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
@@ -49,7 +49,7 @@
   <!-- Header -->
   <header class="header" id="top">
     <div class="text-vertical-center">
-      <div id="Header"></div>
+      <h1>AR Assembly Design Guidelines</h1>
       </br>
       Version 2
       <hr>
@@ -61,7 +61,6 @@
   <div class="row">
     <div class="col-2">
       <ul class="nav flex-column">
-        
         <li class="nav-item">
           <a class="nav-link active" data-toggle="collapse" href="#" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"
             aria-controls="collapseExample">
@@ -123,11 +122,11 @@
           </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" data-toggle="collapse" data-target="#collapseOne" href="#" role="button" aria-expanded="false"
-              aria-controls="collapseExample">
-              <i class="fa fa-circle" style="color:#06D6A0;"></i>&nbsp;&nbsp;&nbsp;Choose FOV based on workspace
-            </a>
-          </li>
+          <a class="nav-link active" data-toggle="collapse" data-target="#collapseOne" href="#" role="button" aria-expanded="false"
+            aria-controls="collapseExample">
+            <i class="fa fa-circle" style="color:#06D6A0;"></i>&nbsp;&nbsp;&nbsp;Choose FOV based on workspace
+          </a>
+        </li>
       </ul>
     </div>
     <div class="col-8">
@@ -155,32 +154,22 @@
                     </a>
                   </p>
                   <div class="collapse" id="collapse2">
-                    <div id="carousel2" class="carousel slide" data-ride="carousel">
-                      <ol class="carousel-indicators">
+                    <video width="600" height="360" id="video2" controls loop>
+                      <source src="videos/handsfree.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
+                    <div id="carousel2" class="carousel slide" data-ride="carousel" data-interval="false" data-interval="false">
+                      <!-- <ol class="carousel-indicators">
                         <li data-target="#carousel2" data-slide-to="0" class="active" onClick="pauseFirstVideoPlaySecondVideo(2,1)"></li>
                         <li data-target="#carousel2" data-slide-to="1" onClick="pauseFirstVideoPlaySecondVideo(1,2)"></li>
-                      </ol>
+                      </ol> -->
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <video width="600;" height="360;" id="video1" controls loop>
-                            <source src="videos/sandwich.mp4" type="video/mp4"> Your browser does not support the video tag.
+                          <video hidden width="600" height="360" id="video1" controls loop>
+                            <source src="" type="video/mp4"> Your browser does not support the video tag.
                           </video>
-                          <div class="carousel-caption d-none d-md-block">
-                            <!-- <a href="https://www.youtube.com/watch?v=UGmywcSbXMI" target="_blank">
-                              <p>Source</p>
-                            </a> -->
-                          </div>
+
                         </div>
-                        <div class="carousel-item">
-                          <video width="600" height="360" id="video2" controls loop>
-                            <source src="videos/handsfree.mp4" type="video/mp4"> Your browser does not support the video tag.
-                          </video>
-                          <div class="carousel-caption d-none d-md-block">
-                            <!--   <a href="https://www.youtube.com/watch?v=USakPP45WvM">
-                              <p>Source</p>
-                            </a> -->
-                          </div>
-                        </div>
+
                       </div>
                     </div>
                   </div>
@@ -272,7 +261,7 @@
                   </p>
                   <div class="collapse" id="collapse5">
                     <a href="https://www.youtube.com/watch?v=VApDEJMMc0M" target="_blank">
-                      <img src="gifs/6.gif" alt="virtual tool" width="540" height="360">
+                      <img src="gifs/stepbystep.gif" alt="virtual tool" width="540" height="360">
                     </a>
                   </div>
                 </div>
@@ -290,11 +279,12 @@
           </div>
           <div id="collapseFourB" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
             <div class="card-body">
-              <h4>Directly
+              <h4>For intuitive instructions,
                 <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" title="Superimposition"
-                  data-content="Virtual assets displayed directly over real objects">superimpose</a> virtual information on the real world for convenient, hands-free instructions, but be wary
-                of
-                <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" title="Occlusion" data-content="The real object is hidden behind the virtual object">occlusion.</a>
+                  data-content="Virtual content is displayed directly on top of a real object.">superimpose</a> virtual content over real-world objects, rather than
+                <a href="#" data-img="images/ots.png" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top"
+                  data-text="Virtual content is displayed <i>beside</i> the object of assembly." title="Off-to-the-side">off-to-the-side</a>, but be wary of
+                <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" title="Occlusion" data-content="The view of a real object is obstructed by virtual content.">occlusion.</a>
               </h4>
               &nbsp;
               <div class="row">
@@ -305,7 +295,7 @@
                     </a>
                   </p>
                   <div class="collapse" id="collapse6">
-                    <div id="carousel7" class="carousel slide" data-ride="carousel">
+                    <div id="carousel7" class="carousel slide" data-ride="carousel" data-interval="false">
                       <ol class="carousel-indicators">
                         <li data-target="#carousel7" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel7" data-slide-to="1"></li>
@@ -355,7 +345,7 @@
                     </a>
                   </p>
                   <div class="collapse" id="collapse8">
-                    <div id="carousel9" class="carousel slide" data-ride="carousel">
+                    <div id="carousel9" class="carousel slide" data-ride="carousel" data-interval="false">
                       <ol class="carousel-indicators">
                         <li data-target="#carousel9" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel9" data-slide-to="1"></li>
@@ -363,19 +353,9 @@
                       <div class="carousel-inner">
                         <div class="carousel-item active">
                           <img class="d-block w-100" src="gifs/8.gif" alt="First slide">
-                          <div class="carousel-caption d-none d-md-block">
-                            <!-- <a href="https://www.youtube.com/watch?v=8HvMk3C8pM0" target="_blank">
-                              <p>Source</p>
-                            </a> -->
-                          </div>
                         </div>
                         <div class="carousel-item">
                           <img class="d-block w-100" src="gifs/8_b.gif" alt="Second slide">
-                          <div class="carousel-caption d-none d-md-block">
-                            <!-- <a href="https://www.youtube.com/watch?v=609RIVGcXyw" target="_blank">
-                              <p>Source</p>
-                            </a> -->
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -407,7 +387,7 @@
                     </a>
                   </p>
                   <div class="collapse" id="collapse8">
-                    <div id="carousel9b" class="carousel slide" data-ride="carousel">
+                    <div id="carousel9b" class="carousel slide" data-ride="carousel" data-interval="false">
                       <ol class="carousel-indicators">
                         <li data-target="#carousel9b" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel9b" data-slide-to="1"></li>
@@ -415,19 +395,9 @@
                       <div class="carousel-inner">
                         <div class="carousel-item active">
                           <img class="d-block w-100" src="gifs/9.gif" alt="First slide">
-                          <div class="carousel-caption d-none d-md-block">
-                            <!-- <a href="https://www.youtube.com/watch?v=QZ5GdhSnMzQ" target="_blank">
-                              <p>Source</p>
-                            </a> -->
-                          </div>
                         </div>
                         <div class="carousel-item">
                           <img class="d-block w-100" src="gifs/9_b.gif" alt="Second slide">
-                          <div class="carousel-caption d-none d-md-block">
-                            <!-- <a href="https://www.youtube.com/watch?v=tEW2khqu4bM" target="_blank">
-                              <p>Source</p>
-                            </a> -->
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -448,8 +418,8 @@
           <div id="collapseSix" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
             <div class="card-body">
               <h4>Use salient
-                <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" title="Attentional" data-img="gifs/attentional_optimized.gif"
-                  data-text="Primitives that draw the user's attention to specific points of interest.">attentional</a> visual indicators (e.g. high contrast color highlights) to help users quickly detect and
+                <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" title="Attentional"
+                  data-img="gifs/attentional_optimized.gif" data-text="Primitives that draw the user's attention to specific points of interest.">attentional</a> visual indicators (e.g. high contrast color highlights) to help users quickly detect and
                 identify targets in the real environment.</h4>
               &nbsp;
               <div class="row">
@@ -458,29 +428,23 @@
                     <a class="btn btn-secondary" data-toggle="collapse" href="#collapse9" role="button" aria-expanded="false" aria-controls="collapseExample">
                       Example
                     </a>
+
                   </p>
                   <div class="collapse" id="collapse9">
-                    <div id="carousel10" class="carousel slide" data-ride="carousel">
-                      <ol class="carousel-indicators">
+
+
+                    <div id="carousel10" class="carousel slide" data-ride="carousel" data-interval="false">
+                      <!-- <ol class="carousel-indicators">
                         <li data-target="#carousel10" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel10" data-slide-to="1"></li>
-                      </ol>
+                      </ol> -->
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img class="d-block w-100" src="gifs/salient.gif" alt="First slide">
-                          <div class="carousel-caption d-none d-md-block">
-                            <!-- <a href="https://www.youtube.com/watch?v=6oa6LDSgUKc" target="_blank">
-                              <p>Source</p>
-                            </a> -->
-                          </div>
+                          <img class="d-block w-100" src="gifs/10_b.gif" alt="First slide">
+
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100" src="gifs/10_b.gif" alt="Second slide">
-                          <div class="carousel-caption d-none d-md-block">
-                            <!-- <a href="">
-                              <p>Source</p>
-                            </a> -->
-                          </div>
+                          <img class="d-block w-100" src="gifs/salient.gif" alt="Second slide">
                         </div>
                       </div>
                     </div>
@@ -514,14 +478,14 @@
                     </a>
                   </p>
                   <div class="collapse" id="collapse10">
-                    <div id="carousel11" class="carousel slide" data-ride="carousel">
-                      <ol class="carousel-indicators">
+                    <div id="carousel11" class="carousel slide" data-ride="carousel" data-interval="false">
+                      <!-- <ol class="carousel-indicators">
                         <li data-target="#carousel11" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel11" data-slide-to="1"></li>
-                      </ol>
+                      </ol> -->
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img class="d-block w-100" src="gifs/11.gif" alt="First slide">
+                          <img class="d-block w-100" src="gifs/11_b.gif" alt="First slide">
                           <div class="carousel-caption d-none d-md-block">
                             <!-- <a href="https://www.youtube.com/watch?v=eVV5tUmky6c" target="_blank">
                               <p>Source</p>
@@ -574,7 +538,52 @@
             </div>
           </div>
         </div>
-        <div id="FOV"></div>
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <i class="fa fa-circle" style="color:#06d6a0;"></i>
+                &nbsp;&nbsp;Choose FOV based on workspace
+              </button>
+            </h5>
+          </div>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              <h4>Choose display hardware that can fit the assembly workspace and virtual content within its
+                <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-img="images/HMD.jpg"
+                  title="Field of View" data-content="The extent of the world seen by the user at any given time">FOV</a>. This will reduce excessive head movements for
+                <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-img="images/HMD.jpg"
+                  title="Head-mounted Display" data-text="Display hardware that is worn on the user\s head (e.g. HoloLens, Google Glass).">
+                  HMD
+                </a>and panning operations for
+                <a href="#" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" title="Hand-held Display"
+                  data-img="images/HHD.jpg" data-text="Display hardware that is held in the user\s hands (e.g. tablet, smartphone).">
+                  HHD
+                </a>.</h4>
+              <p>
+                <a class="btn btn-secondary" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  Example
+                </a>
+              </p>
+              <div class="collapse" id="collapse1">
+                <div id="carousel10" class="carousel slide" data-ride="carousel" data-interval="false">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel10" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel10" data-slide-to="1"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="gifs/fov1.gif" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="gifs/fov2.gif" alt="Second slide">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
