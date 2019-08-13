@@ -44,7 +44,7 @@
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target=".bd-example-modal-lg">Help</button>
+          <a class="nav-link" data-toggle="modal" data-target=".bd-example-modal-lg">Help</a>
 
 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -64,9 +64,9 @@
   <!-- Header -->
   <header class="header" id="top">
     <div class="text-vertical-center">
-      <h1>AR Assembly Design Guidelines</h1>
-      </br>
-      Version 2
+      <h1>AR Assembly Design Guidelines</h1><br>
+<!--       </br>
+      Version 2 -->
       <hr>
       <br>
     </div>
@@ -75,69 +75,79 @@
   <!-- /.container -->
   <div class="row">
     <div class="col-2">
-      <ul class="nav flex-column">
+      <ul class="nav flex-column" id="ul-sidebar">
+         <!--Search Form-->
+         <!--  <li> -->
+            <form class="search-form" role="search">
+              <div class="form-group md-form mt-0 waves-light">
+                &nbsp;&nbsp;&nbsp;
+                <input id="searchbar-input" style="border-radius: 5px 5px 5px 5px; border: 2px solid lightgrey; width: 90%;" type="text" placeholder="Search..." onkeyup="searchSidebar()">
+              </div>
+            </form>
+      <!--     </li> -->
+          <!--/.Search Form-->
         <li class="nav-item">
-          <a class="nav-link active" data-toggle="collapse" href="#" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"
+          <a class="nav-link active sidebar" data-toggle="collapse" href="#" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"
             aria-controls="collapseExample">
             <i class="fa fa-circle" style="color:#03919b;"></i>&nbsp;&nbsp;&nbsp;Support hands-free interactions
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" data-toggle="collapse" href="#collapseNav2" data-target="#collapseThree" role="button" aria-expanded="false"
+          <a class="nav-link active sidebar" data-toggle="collapse" href="#collapseNav2" data-target="#collapseThree" role="button" aria-expanded="false"
             aria-controls="collapseExample">
             <i class="fa fa-circle" style="color:#ff7a73;"></i>&nbsp;&nbsp;&nbsp;Shorten verbose audio
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" data-toggle="collapse" href="#collapseNav2" data-target="#collapseThreeB" role="button" aria-expanded="false"
+          <a class="nav-link active sidebar" data-toggle="collapse" href="#collapseNav2" data-target="#collapseThreeB" role="button" aria-expanded="false"
             aria-controls="collapseExample">
             <i class="fa fa-circle" style="color:#FFC43D;"></i>&nbsp;&nbsp;&nbsp;Supplement audio with visuals
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" data-toggle="collapse" href="#collapseNav3" data-target="#collapseFour" role="button" aria-expanded="false"
+          <a class="nav-link active sidebar" data-toggle="collapse" href="#collapseNav3" data-target="#collapseFour" role="button" aria-expanded="false"
             aria-controls="collapseExample">
             <i class="fa fa-circle" style="color:#146BCC;"></i>&nbsp;&nbsp;&nbsp;Present relevant virtual content
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" data-toggle="collapse" href="#collapseNav4" data-target="#collapseFourB" role="button" aria-expanded="false"
+          <a class="nav-link active sidebar" data-toggle="collapse" href="#collapseNav4" data-target="#collapseFourB" role="button" aria-expanded="false"
             aria-controls="collapseExample">
             <i class="fa fa-circle" style="color:#c6c6ff;"></i>&nbsp;&nbsp;&nbsp;Superimpose on the real world
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" data-toggle="collapse" href="#collapseNav4" data-target="#collapseFive" role="button" aria-expanded="false"
+          <a class="nav-link active sidebar" data-toggle="collapse" href="#collapseNav4" data-target="#collapseFive" role="button" aria-expanded="false"
             aria-controls="collapseExample">
             <i class="fa fa-circle" style="color:#00A788;"></i>&nbsp;&nbsp;&nbsp;Depict action with 3D elements
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" data-toggle="collapse" href="#collapseNav4" data-target="#collapseFiveB" role="button" aria-expanded="false"
+          <a class="nav-link active sidebar" data-toggle="collapse" href="#collapseNav4" data-target="#collapseFiveB" role="button" aria-expanded="false"
             aria-controls="collapseExample">
             <i class="fa fa-circle" style="color:#6f6aa9;"></i>&nbsp;&nbsp;&nbsp;Clearly depict hand maneuvers
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" data-toggle="collapse" href="#collapseSix" data-target="#collapseSix" role="button" aria-expanded="false"
+          <a class="nav-link active sidebar" data-toggle="collapse" href="#collapseSix" data-target="#collapseSix" role="button" aria-expanded="false"
             aria-controls="collapseExample">
             <i class="fa fa-circle" style="color:#A3CC00;"></i>&nbsp;&nbsp;&nbsp;Use salient cues
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" data-toggle="collapse" href="#collapseNav5" data-target="#collapseSeven" role="button" aria-expanded="false"
+          <a class="nav-link active sidebar" data-toggle="collapse" href="#collapseNav5" data-target="#collapseSeven" role="button" aria-expanded="false"
             aria-controls="collapseExample">
             <i class="fa fa-circle" style="color:#FFB4A0;"></i>&nbsp;&nbsp;&nbsp;View-stabilize critical info
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" data-toggle="collapse" href="#collapseNav5" data-target="#collapseSevenB" role="button" aria-expanded="false"
+          <a class="nav-link active sidebar" data-toggle="collapse" href="#collapseNav5" data-target="#collapseSevenB" role="button" aria-expanded="false"
             aria-controls="collapseExample">
             <i class="fa fa-circle" style="color:#9bccff;"></i>&nbsp;&nbsp;&nbsp;Keep text minimal
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" data-toggle="collapse" data-target="#collapseOne" href="#" role="button" aria-expanded="false"
+          <a class="nav-link active sidebar" data-toggle="collapse" data-target="#collapseOne" href="#" role="button" aria-expanded="false"
             aria-controls="collapseExample">
             <i class="fa fa-circle" style="color:#06D6A0;"></i>&nbsp;&nbsp;&nbsp;Choose FOV based on workspace
           </a>
@@ -150,7 +160,8 @@
           <div class="card-header" id="headingTwo">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <i class="fa fa-circle" style="color:#1B9AAA;"></i>&nbsp;&nbsp;&nbsp;Support hands-free interactions
+                <!-- <i class="fa fa-circle" style="color:#1B9AAA;"></i>&nbsp;&nbsp;&nbsp; -->
+                Support hands-free interactions
               </button>
             </h5>
           </div>
@@ -197,7 +208,8 @@
           <div class="card-header" id="headingThree">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseTwo">
-                <i class="fa fa-circle" style="color:#ff7a73;"></i>&nbsp;&nbsp;&nbsp;Shorten verbose audio
+                <!-- <i class="fa fa-circle" style="color:#ff7a73;"></i>&nbsp;&nbsp;&nbsp; -->
+                Shorten verbose audio
               </button>
             </h5>
           </div>
@@ -224,11 +236,12 @@
         </div>
         <div class="card">
           <div class="card-header" id="headingThree">
-            <h5 class="mb-0">
+            <h4 class="mb-0">
               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThreeB" aria-expanded="true" aria-controls="collapseTwo">
-                <i class="fa fa-circle" style="color:#FFC43D;"></i>&nbsp;&nbsp;&nbsp;Supplement audio with visuals
+                <!-- <i class="fa fa-circle" style="color:#FFC43D;"></i>&nbsp;&nbsp;&nbsp; -->
+                Supplement audio with visuals
               </button>
-            </h5>
+            </h4>
           </div>
           <div id="collapseThreeB" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
             <div class="card-body">
@@ -254,11 +267,12 @@
         </div>
         <div class="card">
           <div class="card-header" id="headingTwo">
-            <h5 class="mb-0">
+            <h4 class="mb-0">
               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
-                <i class="fa fa-circle" style="color:#146BCC;"></i>&nbsp;&nbsp;&nbsp;Present relevant virtual content
+                <!-- <i class="fa fa-circle" style="color:#146BCC;"></i>&nbsp;&nbsp;&nbsp; -->
+                Present relevant virtual content
               </button>
-            </h5>
+            </h4>
           </div>
           <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
             <div class="card-body">
@@ -288,7 +302,8 @@
           <div class="card-header" id="headingTwo">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFourB" aria-expanded="false" aria-controls="collapseTwo">
-                <i class="fa fa-circle" style="color:#c6c6ff;"></i>&nbsp;&nbsp;&nbsp;Superimpose on the real world
+                <!-- <i class="fa fa-circle" style="color:#c6c6ff;"></i>&nbsp;&nbsp;&nbsp; -->
+                Superimpose on the real world
               </button>
             </h5>
           </div>
@@ -344,7 +359,8 @@
           <div class="card-header" id="headingTwo">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
-                <i class="fa fa-circle" style="color:#00A788;"></i>&nbsp;&nbsp;&nbsp;Depict action with 3D objects
+                <!-- <i class="fa fa-circle" style="color:#00A788;"></i>&nbsp;&nbsp;&nbsp; -->
+                Depict action with 3D objects
               </button>
             </h5>
           </div>
@@ -384,7 +400,8 @@
           <div class="card-header" id="headingTwo">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFiveB" aria-expanded="false" aria-controls="collapseTwo">
-                <i class="fa fa-circle" style="color:#6f6aa9;"></i>&nbsp;&nbsp;&nbsp;Clearly depict hand maneuvers
+                <!-- <i class="fa fa-circle" style="color:#6f6aa9;"></i>&nbsp;&nbsp;&nbsp; -->
+                Clearly depict hand maneuvers
               </button>
             </h5>
           </div>
@@ -426,7 +443,8 @@
           <div class="card-header" id="headingTwo">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseTwo">
-                <i class="fa fa-circle" style="color:#A3CC00;"></i>&nbsp;&nbsp;&nbsp;Use salient cues
+                <!-- <i class="fa fa-circle" style="color:#A3CC00;"></i>&nbsp;&nbsp;&nbsp; -->
+                Use salient cues
               </button>
             </h5>
           </div>
@@ -473,7 +491,8 @@
           <div class="card-header" id="headingTwo">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseTwo">
-                <i class="fa fa-circle" style="color:#FFB4A0;"></i>&nbsp;&nbsp;&nbsp;View-stabilize critical info
+          <!--       <i class="fa fa-circle" style="color:#FFB4A0;"></i>&nbsp;&nbsp;&nbsp; -->
+                View-stabilize critical info
               </button>
             </h5>
           </div>
@@ -527,7 +546,8 @@
           <div class="card-header" id="headingTwo">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSevenB" aria-expanded="false" aria-controls="collapseTwo">
-                <i class="fa fa-circle" style="color:#9bccff;"></i>&nbsp;&nbsp;&nbsp;Keep text minimal
+             <!--    <i class="fa fa-circle" style="color:#9bccff;"></i>&nbsp;&nbsp;&nbsp; -->
+                Keep text minimal
               </button>
             </h5>
           </div>
@@ -557,8 +577,9 @@
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
               <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <i class="fa fa-circle" style="color:#06d6a0;"></i>
-                &nbsp;&nbsp;Choose FOV based on workspace
+             <!--    <i class="fa fa-circle" style="color:#06d6a0;"></i>
+                &nbsp;&nbsp; -->
+                Choose FOV based on workspace
               </button>
             </h5>
           </div>
@@ -575,7 +596,7 @@
                   data-img="images/HHD.jpg" data-text="Display hardware that is held in the user's hands (e.g. tablet, smartphone).">
                   HHD
                 </a>.</h4>
-              <p>
+              <p><br/>
                 <a class="btn btn-secondary" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample">
                   Example
                 </a>
