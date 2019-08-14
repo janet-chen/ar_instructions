@@ -81,8 +81,8 @@ button.btn {
 }
 
 .sidebar {
-    padding-left: 35px;
-    font-size: 15px !important;
+    padding-left: 40px;
+    font-size: 14px !important;
     color: gray;
 }
 
@@ -93,4 +93,13 @@ button.btn {
     margin-bottom: 15px;
 }
 
+.modal-lg {
+    max-width: 60%;
+}
+
+@media (max-width: 1500px) {
+  #ul-sidebar {
+    display: none;
+  }
+}
 
