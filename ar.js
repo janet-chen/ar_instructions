@@ -15,14 +15,36 @@ $('#myModal').on('shown.bs.modal', function () {
   $('#myInput').trigger('focus')
 });
 
-// Video functions
 
+function searchSidebar() {
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('searchbar-input');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("ul-sidebar");
+  li = ul.getElementsByTagName('li');
+
+// Hide items that don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
+// Video functions
 function playPause(videoNumber) {
     var video = document.getElementById("video" + videoNumber.toString());
-    if (video.paused)
-        video.play();
-    else
+    if (!video.paused) {
         video.pause();
+    }
+    // if (video.paused)
+    //     video.play();
+    // else
+    //     video.pause();
 }
 
 function pauseFirstVideoPlaySecondVideo(videoNumber1, videoNumber2) {
