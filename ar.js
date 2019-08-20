@@ -61,4 +61,7 @@ function pauseFirstVideoPlaySecondVideo(videoNumber1, videoNumber2) {
 var loudVideo = document.getElementById("video1");
 loudVideo.volume = 0.1;
 
+var videoFlip = document.getElementById("flip_laptop");
+videoFlip.volume = 0.1;
+
  
