@@ -67,83 +67,14 @@
   </header>
   <!-- /.container -->
   <div class="row">
-    <!-- <div class="col-2">
-      <ul class="nav flex-column" id="ul-sidebar">
-        <li class="nav-item">
-          <a class="nav-link active sidebar" data-toggle="collapse" data-target="#collapseOne" href="#" role="button" aria-expanded="false"
-            aria-controls="collapseExample">
-            <i class="fa fa-circle" style="color:#06D6A0;"></i>&nbsp;&nbsp;&nbsp;FOV based on workspace
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active sidebar" data-toggle="collapse" href="#" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"
-            aria-controls="collapseExample">
-            <i class="fa fa-circle" style="color:#03919b;"></i>&nbsp;&nbsp;&nbsp;Hands-free interactions
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active sidebar" data-toggle="collapse" href="#collapseNav2" data-target="#collapseThree" role="button"
-            aria-expanded="false" aria-controls="collapseExample">
-            <i class="fa fa-circle" style="color:#ff7a73;"></i>&nbsp;&nbsp;&nbsp;Complex configurations
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active sidebar" data-toggle="collapse" href="#collapseNav2" data-target="#collapseThreeB" role="button"
-            aria-expanded="false" aria-controls="collapseExample">
-            <i class="fa fa-circle" style="color:#FFC43D;"></i>&nbsp;&nbsp;&nbsp;Visual aids for audio
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active sidebar" data-toggle="collapse" href="#collapseNav3" data-target="#collapseFour" role="button"
-            aria-expanded="false" aria-controls="collapseExample">
-            <i class="fa fa-circle" style="color:#146BCC;"></i>&nbsp;&nbsp;&nbsp;Relevant parts only
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active sidebar" data-toggle="collapse" href="#collapseNav4" data-target="#collapseFourB" role="button"
-            aria-expanded="false" aria-controls="collapseExample">
-            <i class="fa fa-circle" style="color:#c6c6ff;"></i>&nbsp;&nbsp;&nbsp;Direct superimposition
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active sidebar" data-toggle="collapse" href="#collapseNav4" data-target="#collapseFive" role="button"
-            aria-expanded="false" aria-controls="collapseExample">
-            <i class="fa fa-circle" style="color:#00A788;"></i>&nbsp;&nbsp;&nbsp;3D objects to depict action
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active sidebar" data-toggle="collapse" href="#collapseNav4" data-target="#collapseFiveB" role="button"
-            aria-expanded="false" aria-controls="collapseExample">
-            <i class="fa fa-circle" style="color:#6f6aa9;"></i>&nbsp;&nbsp;&nbsp;Hand maneuvers
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active sidebar" data-toggle="collapse" href="#collapseSix" data-target="#collapseSix" role="button" aria-expanded="false"
-            aria-controls="collapseExample">
-            <i class="fa fa-circle" style="color:#A3CC00;"></i>&nbsp;&nbsp;&nbsp;Salient cues
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active sidebar" data-toggle="collapse" href="#collapseNav5" data-target="#collapseSeven" role="button"
-            aria-expanded="false" aria-controls="collapseExample">
-            <i class="fa fa-circle" style="color:#FFB4A0;"></i>&nbsp;&nbsp;&nbsp;View-stabilization
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active sidebar" data-toggle="collapse" href="#collapseNav5" data-target="#collapseSevenB" role="button"
-            aria-expanded="false" aria-controls="collapseExample">
-            <i class="fa fa-circle" style="color:#9bccff;"></i>&nbsp;&nbsp;&nbsp;Minimal text
-          </a>
-        </li>
-      </ul>
-    </div> -->
+
     <div class="col">
       <div id="accordion">
         <div class="card">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
               <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                FOV based on workspace
+                <i class="fa fa-circle" style="color:#06D6A0;"></i>&nbsp;&nbsp;&nbsp; FOV based on workspace
               </button>
             </h5>
           </div>
@@ -181,7 +112,7 @@
           <div class="card-header" id="headingTwo">
             <h5 class="mb-0">
               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <!-- <i class="fa fa-circle" style="color:#1B9AAA;"></i>&nbsp;&nbsp;&nbsp; -->Hands-free interactions
+                <i class="fa fa-circle" style="color:#1B9AAA;"></i>&nbsp;&nbsp;&nbsp; Hands-free interactions
               </button>
             </h5>
           </div>
@@ -222,7 +153,7 @@
         <div class="card-header" id="headingThree">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseTwo">
-              Complex configurations
+              <i class="fa fa-circle" style="color:#ff7a73;"></i>&nbsp;&nbsp;&nbsp; Complex configurations
             </button>
           </h5>
         </div>
@@ -234,22 +165,21 @@
             &nbsp;
             <div class="row">
               <div class="col">
-                <a class="btn btn-secondary" data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <a class="btn btn-secondary" data-toggle="collapse" href="#collapse3a" role="button" aria-expanded="false" aria-controls="collapseExample">
                   Example 1
+                </a>
+                <div class="collapse" id="collapse3a">
+                  <video id="video3" controls loop muted>
+                    <source src="videos/complex.mp4" type="video/mp4"> Your browser does not support the video tag.
+                  </video>
+                </div>
+                <a class="btn btn-secondary" data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  Example 2
                 </a>
                 <div class="collapse" id="collapse3">
                   <a href="https://www.youtube.com/watch?v=d3fK7WayWX4" target="_blank">
-                    <img src="gifs/4_cropped.gif" alt="virtual tool" width="540" height="360">
+                    <img src="gifs/4_cropped.gif" alt="virtual tool">
                   </a>
-                </div>
-                <a class="btn btn-secondary" data-toggle="collapse" href="#collapse3a" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Example 2
-                  <img src="images/speaker-32.png" width="16" alt="speaker-icon" />
-                </a>
-                <div class="collapse" id="collapse3a">
-                  <video id="video3" width="540" height="360" controls loop>
-                    <source src="videos/verbose.mp4" type="video/mp4"> Your browser does not support the video tag.
-                  </video>
                 </div>
               </div>
             </div>
@@ -260,7 +190,7 @@
         <div class="card-header" id="headingThree">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThreeB" aria-expanded="true" aria-controls="collapseTwo">
-              <!-- <i class="fa fa-circle" style="color:#FFC43D;"></i>&nbsp;&nbsp;&nbsp; -->Visual aids for audio
+              <i class="fa fa-circle" style="color:#FFC43D;"></i>&nbsp;&nbsp;&nbsp; Visual aids for audio
             </button>
           </h5>
         </div>
@@ -279,7 +209,7 @@
             </p>
             <div class="collapse" id="collapse4">
               <a href="https://www.youtube.com/watch?v=XzlZcdYmdvk" target="_blank">
-                <video id="video3" width="540" height="360" controls loop>
+                <video id="video3" controls loop>
                   <source src="videos/supplementing_audio.mp4" type="video/mp4"> Your browser does not support the video tag.
                 </video>
               </a>
@@ -291,7 +221,7 @@
         <div class="card-header" id="headingTwo">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
-              <!-- <i class="fa fa-circle" style="color:#146BCC;"></i>&nbsp;&nbsp;&nbsp; -->Relevant parts only
+              <i class="fa fa-circle" style="color:#146BCC;"></i>&nbsp;&nbsp;&nbsp; Relevant parts only
             </button>
           </h5>
         </div>
@@ -312,7 +242,7 @@
                 </p>
                 <div class="collapse" id="collapse5">
                   <a href="https://www.youtube.com/watch?v=VApDEJMMc0M" target="_blank">
-                    <img src="gifs/stepbystep.gif" alt="virtual tool" width="540" height="360">
+                    <img src="gifs/stepbystep.gif" alt="virtual tool">
                   </a>
                 </div>
               </div>
@@ -324,7 +254,7 @@
         <div class="card-header" id="headingTwo">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFourB" aria-expanded="false" aria-controls="collapseTwo">
-              <!-- <i class="fa fa-circle" style="color:#c6c6ff;"></i>&nbsp;&nbsp;&nbsp; -->Direct superimposition
+              <i class="fa fa-circle" style="color:#c6c6ff;"></i>&nbsp;&nbsp;&nbsp; Direct superimposition
             </button>
           </h5>
         </div>
@@ -344,13 +274,13 @@
                   Example 1
                 </a>
                 <div class="collapse" id="collapse6">
-                  <img class="d-block w-100" src="gifs/7.gif" alt="First slide" width="540" height="360">
+                  <img class="d-block w-100" src="gifs/7.gif" alt="First slide">
                 </div>
                 <a class="btn btn-secondary" data-toggle="collapse" href="#collapse6a" role="button" aria-expanded="false" aria-controls="collapseExample">
                   Example 2
                 </a>
                 <div class="collapse" id="collapse6a">
-                  <img class="d-block w-100" src="gifs/7_b.gif" alt="Second slide" width="540" height="360">
+                  <img class="d-block w-100" src="gifs/7_b.gif" alt="Second slide">
                 </div>
               </div>
             </div>
@@ -361,7 +291,7 @@
         <div class="card-header" id="headingTwo">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
-              <!-- <i class="fa fa-circle" style="color:#00A788;"></i>&nbsp;&nbsp;&nbsp; -->3D objects to depict action
+              <i class="fa fa-circle" style="color:#00A788;"></i>&nbsp;&nbsp;&nbsp; 3D objects to depict action
             </button>
           </h5>
         </div>
@@ -375,13 +305,13 @@
                   Example 1
                 </a>
                 <div class="collapse" id="collapse8">
-                  <img class="d-block w-100" src="gifs/8.gif" alt="First slide" width="540" height="360">
+                  <img class="d-block w-100" src="gifs/8.gif" alt="First slide">
                 </div>
                 <a class="btn btn-secondary" data-toggle="collapse" href="#collapse8a" role="button" aria-expanded="false" aria-controls="collapseExample">
                   Example 2
                 </a>
                 <div class="collapse" id="collapse8a">
-                  <img class="d-block w-100" src="gifs/8_b.gif" alt="Second slide" width="540" height="360">
+                  <img class="d-block w-100" src="gifs/8_b.gif" alt="Second slide">
                 </div>
               </div>
             </div>
@@ -392,7 +322,7 @@
         <div class="card-header" id="headingTwo">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFiveB" aria-expanded="false" aria-controls="collapseTwo">
-              <!-- <i class="fa fa-circle" style="color:#6f6aa9;"></i>&nbsp;&nbsp;&nbsp; -->Hand maneuvers
+              <i class="fa fa-circle" style="color:#6f6aa9;"></i>&nbsp;&nbsp;&nbsp; Hand maneuvers
             </button>
           </h5>
         </div>
@@ -409,13 +339,15 @@
                   Example 1
                 </a>
                 <div class="collapse" id="collapse9">
-                  <img class="d-block w-100" src="gifs/9_b.gif" alt="First slide" width="540" height="360">
+                  <img class="d-block w-100" src="gifs/9_b.gif" alt="First slide">
                 </div>
                 <a class="btn btn-secondary" data-toggle="collapse" href="#collapse9a" role="button" aria-expanded="false" aria-controls="collapseExample">
                   Example 2
                 </a>
                 <div class="collapse" id="collapse9a">
-                  <img class="d-block w-100" src="gifs/9.gif" alt="Second slide" width="540" height="360">
+                  <video id="1" controls loop muted>
+                    <source src="videos/9_c.mp4" type="video/mp4"> Your browser does not support the video tag.
+                  </video>
                 </div>
               </div>
             </div>
@@ -426,7 +358,7 @@
         <div class="card-header" id="headingTwo">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseTwo">
-              <!-- <i class="fa fa-circle" style="color:#A3CC00;"></i>&nbsp;&nbsp;&nbsp; -->Salient cues
+              <i class="fa fa-circle" style="color:#A3CC00;"></i>&nbsp;&nbsp;&nbsp; Salient cues
             </button>
           </h5>
         </div>
@@ -444,13 +376,13 @@
                   Example 1
                 </a>
                 <div class="collapse" id="collapse9">
-                  <img class="d-block w-100" src="gifs/10_c.gif" alt="First slide" width="540" height="360">
+                  <img class="d-block w-100" src="gifs/10_c.gif" alt="First slide">
                 </div>
                 <a class="btn btn-secondary" data-toggle="collapse" href="#collapse9a" role="button" aria-expanded="false" aria-controls="collapseExample">
                   Example 2
                 </a>
                 <div class="collapse" id="collapse9a">
-                  <img class="d-block w-100" src="gifs/salient.gif" alt="Second slide" width="540" height="360">
+                  <img class="d-block w-100" src="gifs/salient.gif" alt="Second slide">
                 </div>
               </div>
             </div>
@@ -461,7 +393,7 @@
         <div class="card-header" id="headingTwo">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseTwo">
-              View-stabilization
+              <i class="fa fa-circle" style="color:#FFB4A0;"></i>&nbsp;&nbsp;&nbsp; View-stabilization
             </button>
           </h5>
         </div>
@@ -481,7 +413,7 @@
                   </a>
                 </p>
                 <div class="collapse" id="collapse10">
-                  <img class="d-block w-100" src="gifs/11_b.gif" alt="Second slide" width="540" height="360">
+                  <img class="d-block w-100" src="gifs/11_b.gif" alt="Second slide">
                 </div>
               </div>
             </div>
@@ -492,7 +424,7 @@
         <div class="card-header" id="headingTwo">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSevenB" aria-expanded="false" aria-controls="collapseTwo">
-              <!--    <i class="fa fa-circle" style="color:#9bccff;"></i>&nbsp;&nbsp;&nbsp; -->Minimal text
+              <i class="fa fa-circle" style="color:#9bccff;"></i>&nbsp;&nbsp;&nbsp; Minimal text
             </button>
           </h5>
         </div>
@@ -511,7 +443,7 @@
                 </p>
                 <div class="collapse" id="collapse11">
                   <a href="https://www.youtube.com/watch?v=eVV5tUmky6c" target="_blank">
-                    <img src="gifs/12_b.gif" alt="virtual tool" width="540" height="360">
+                    <img src="gifs/12_b.gif" alt="virtual tool">
                   </a>
                 </div>
               </div>
